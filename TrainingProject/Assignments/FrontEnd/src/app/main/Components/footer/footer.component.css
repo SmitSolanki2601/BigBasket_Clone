@@ -1,0 +1,201 @@
+footer {
+    width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    margin-top: 15px;
+}
+
+footer .footer-links,
+footer .footer-nav {
+    padding: 20px;
+    border-bottom: 1px dashed #dedede;
+}
+
+footer .footer-links .col-wraper {
+    float: left;
+    width: 25%;
+}
+
+footer .footer-links .col-wraper h4 {
+    color: #6CD138;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+footer .footer-links .col-wraper ul li {
+    padding: 5px 0;
+}
+
+footer .footer-links .col-wraper ul li a,
+footer .footer-nav .footer-nav-list ul li a,
+footer .footer-nav .footer-nav-list ul li {
+    color: #808080;
+    font-weight: 300;
+    font-family: 'Roboto Slab', serif;
+    font-size: 14px;
+}
+
+footer .footer-links .col-wraper ul li a:hover,
+footer .footer-nav .footer-nav-list ul li a:hover {
+    color: #096;
+}
+
+footer .footer-nav .pop-cat,
+footer .footer-nav .pop-brands,
+footer .footer-nav .serve-cities {
+    padding-bottom: 12px;
+}
+
+footer .footer-nav .payment-opt {
+    padding-top: 12px;
+}
+
+footer .footer-nav .payment-opt .footer-nav-list ul li img {
+    vertical-align: middle;
+}
+
+footer .footer-nav .footer-nav-header {
+    float: left;
+    width: 20%;
+}
+
+footer .footer-nav .footer-nav-header h4 {
+    margin: 0 0 5px 0;
+    color: #6CD138;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* footer .footer-nav .footer-nav-list {
+float: left;
+} */
+
+footer .footer-nav .footer-nav-list ul li {
+    list-style: none;
+    display: inline;
+}
+
+.copyright {
+    background: #dedede;
+}
+
+.copyright .copy-wrap {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.copyright .copy-wrap p {
+    font-size: 14px;
+    color: #808080;
+    margin-left: 20px;
+    padding-top: 8px;
+    height: 25px;
+}
+
+#social {
+    margin-top: 18px;
+}
+
+.smGlobalBtn {
+    margin-right: 5px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border: 2px solid #DDD;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #FFF;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 44px;
+    border-radius: 27px;
+}
+
+/* facebook button class*/
+.facebookBtn {
+    background: #3b5998;
+}
+
+.facebookBtn:before {
+    font-family: "FontAwesome";
+    content: "\f09a";
+}
+
+.facebookBtn:hover,
+.facebookBtn:focus {
+    color: #3b5998;
+    background: #fff;
+    border-color: #3b5998;
+}
+
+/* twitter button class*/
+.twitterBtn {
+    background: #00aced;
+}
+
+.twitterBtn:before {
+    font-family: "FontAwesome";
+    content: "\f099";
+}
+
+.twitterBtn:hover,
+.twitterBtn:focus {
+    color: #00aced;
+    background: #fff;
+    border-color: #00aced;
+}
+
+/* Google+ button class*/
+.gplusBtn {
+    background: #db3236;
+}
+
+.gplusBtn:before {
+    font-family: "FontAwesome";
+    content: "\f0d5";
+}
+
+.gplusBtn:hover,
+.gplusBtn:focus {
+    color: #db3236;
+    background: #fff;
+    border-color: #db3236;
+}
+
+/* pinterest button class*/
+.pinterestBtn {
+    background: #db3236;
+}
+
+.pinterestBtn:before {
+    font-family: "FontAwesome";
+    content: "\f231";
+}
+
+.pinterestBtn:hover,
+.pinterestBtn:focus {
+    color: #db3236;
+    background: #fff;
+    border-color: #db3236;
+}
+
+/* Google+ button class*/
+.instagramBtn {
+    background: #517fa4;
+}
+
+.instagramBtn:before {
+    font-family: "FontAwesome";
+    content: "\f16d";
+}
+
+.instagramBtn:hover,
+.instagramBtn:focus {
+    color: #517fa4;
+    background: #fff;
+    border-color: #517fa4;
+}

@@ -1,0 +1,561 @@
+<div id="footer_with_seo" class="bg-light" style="display: block">
+    <!-- Footer -->
+    <footer ng-controller="Footer as vm" class="ng-scope">
+        <div class="footer-links">
+            <div class="col-wraper">
+                <h4>bigbasket</h4>
+                <ul>
+                    <!-- ngRepeat: abt in ::vm.footerData.about -->
+                    <li bindonce="" ng-repeat="abt in ::vm.footerData.about" class="ng-scope"><a bo-href="abt.value"
+                            rel="nofollow" bo-bind="abt.name" href="https://www.bigbasket.com/about-us/">About Us</a>
+                    </li><!-- end ngRepeat: abt in ::vm.footerData.about -->
+                    <li bindonce="" ng-repeat="abt in ::vm.footerData.about" class="ng-scope"><a bo-href="abt.value"
+                            rel="nofollow" bo-bind="abt.name" href="https://www.bigbasket.com/in-media/">In News</a>
+                    </li><!-- end ngRepeat: abt in ::vm.footerData.about -->
+                    <li bindonce="" ng-repeat="abt in ::vm.footerData.about" class="ng-scope"><a bo-href="abt.value"
+                            rel="nofollow" bo-bind="abt.name" href="https://www.bigbasket.com/green-bigbasket/">Green
+                            bigbasket</a></li><!-- end ngRepeat: abt in ::vm.footerData.about -->
+                    <li bindonce="" ng-repeat="abt in ::vm.footerData.about" class="ng-scope"><a bo-href="abt.value"
+                            rel="nofollow" bo-bind="abt.name" href="https://www.bigbasket.com/privacy-policy/">Privacy
+                            Policy</a></li><!-- end ngRepeat: abt in ::vm.footerData.about -->
+                    <li bindonce="" ng-repeat="abt in ::vm.footerData.about" class="ng-scope"><a bo-href="abt.value"
+                            rel="nofollow" bo-bind="abt.name"
+                            href="https://www.bigbasket.com/affiliate-index/">Affiliate</a></li>
+                    <!-- end ngRepeat: abt in ::vm.footerData.about -->
+                    <li bindonce="" ng-repeat="abt in ::vm.footerData.about" class="ng-scope"><a bo-href="abt.value"
+                            rel="nofollow" bo-bind="abt.name"
+                            href="https://www.bigbasket.com/terms-and-conditions/">Terms and Conditions</a></li>
+                    <!-- end ngRepeat: abt in ::vm.footerData.about -->
+                    <li bindonce="" ng-repeat="abt in ::vm.footerData.about" class="ng-scope"><a bo-href="abt.value"
+                            rel="nofollow" bo-bind="abt.name" href="https://careers.bigbasket.com/">Careers At
+                            bigbasket</a></li><!-- end ngRepeat: abt in ::vm.footerData.about -->
+                    <li bindonce="" ng-repeat="abt in ::vm.footerData.about" class="ng-scope"><a bo-href="abt.value"
+                            rel="nofollow" bo-bind="abt.name" href="http://bbinstant.bigbasket.com/">bb Instant</a></li>
+                    <!-- end ngRepeat: abt in ::vm.footerData.about -->
+                    <li bindonce="" ng-repeat="abt in ::vm.footerData.about" class="ng-scope"><a bo-href="abt.value"
+                            rel="nofollow" bo-bind="abt.name" href="http://www.bbdaily.com/">bb Daily</a></li>
+                    <!-- end ngRepeat: abt in ::vm.footerData.about -->
+                    <li bindonce="" ng-repeat="abt in ::vm.footerData.about" class="ng-scope"><a bo-href="abt.value"
+                            rel="nofollow" bo-bind="abt.name" href="https://blog.bigbasket.com/">bb Blog</a></li>
+                    <!-- end ngRepeat: abt in ::vm.footerData.about -->
+                    <li bindonce="" ng-repeat="abt in ::vm.footerData.about" class="ng-scope"><a bo-href="abt.value"
+                            rel="nofollow" bo-bind="abt.name" href="https://www.bigbasket.com/bbnow/">bbnow</a></li>
+                    <!-- end ngRepeat: abt in ::vm.footerData.about -->
+                </ul>
+            </div>
+            <div class="col-wraper">
+                <h4>Help</h4>
+                <ul>
+                    <!-- ngRepeat: hlp in ::vm.footerData.helpsection -->
+                    <li bindonce="" ng-repeat="hlp in ::vm.footerData.helpsection" class="ng-scope"><a
+                            bo-href="hlp.value" rel="nofollow" bo-bind="hlp.name"
+                            href="http://www.bigbasket.com/faq/?nc=bt">FAQs</a></li>
+                    <!-- end ngRepeat: hlp in ::vm.footerData.helpsection -->
+                    <li bindonce="" ng-repeat="hlp in ::vm.footerData.helpsection" class="ng-scope"><a
+                            bo-href="hlp.value" rel="nofollow" bo-bind="hlp.name"
+                            href="http://www.bigbasket.com/contact/?nc=bt">Contact Us</a></li>
+                    <!-- end ngRepeat: hlp in ::vm.footerData.helpsection -->
+                    <li bindonce="" ng-repeat="hlp in ::vm.footerData.helpsection" class="ng-scope"><a
+                            bo-href="hlp.value" rel="nofollow" bo-bind="hlp.name"
+                            href="https://www.bigbasket.com/bb-Wallet-faq/">bb Wallet FAQs</a></li>
+                    <!-- end ngRepeat: hlp in ::vm.footerData.helpsection -->
+                    <li bindonce="" ng-repeat="hlp in ::vm.footerData.helpsection" class="ng-scope"><a
+                            bo-href="hlp.value" rel="nofollow" bo-bind="hlp.name"
+                            href="https://www.bigbasket.com/bb-wallet-terms-and-conditions/">bb Wallet T&amp;Cs</a></li>
+                    <!-- end ngRepeat: hlp in ::vm.footerData.helpsection -->
+                    <li bindonce="" ng-repeat="hlp in ::vm.footerData.helpsection" class="ng-scope"><a
+                            bo-href="hlp.value" rel="nofollow" bo-bind="hlp.name"
+                            href="https://bbvendorconnect.saturam.com/">Vendor Connect</a></li>
+                    <!-- end ngRepeat: hlp in ::vm.footerData.helpsection -->
+                </ul>
+            </div>
+            <div class="col-wraper app-badge">
+                <h4>Download Our App</h4><a href="https://play.google.com/store/apps/details?id=com.bigbasket.mobileapp"
+                    onclick="$(document).trigger('microInteractionPlower', [{'EventName':'DownloadClicked','UserFlow':'footer'}]);logAnalytics('desktop_footer','android');"
+                    target="_blank"><img alt="GooglePlay-BB"
+                        src="https://www.bbassets.com/static/v2571/uiv2/images/Google-App-store-icon.png" width="140"
+                        height="46" style="float:left;margin:10px 0 0 0;"></a><a
+                    href="https://itunes.apple.com/in/app/bigbasket.com/id660683603?mt=8&amp;uo=4"
+                    onclick="$(document).trigger('microInteractionPlower', [{'EventName':'DownloadClicked','UserFlow':'footer'}]);logAnalytics('desktop_footer','iOS');"
+                    target="_blank"><img alt="AppStore-BB"
+                        src="https://www.bbassets.com/static/v2571/uiv2/images/Apple-App-store-icon.png" width="140"
+                        height="46" style="float:left;margin:15px 0 0 0;"></a>
+            </div>
+            <div class="col-wraper">
+                <h4>Get Social With Us</h4>
+                <div id="social"><a class="facebookBtn smGlobalBtn"
+                        href="https://www.facebook.com/pages/Bigbasketcom/139311472851666" target="_blank"></a><a
+                        class="pinterestBtn smGlobalBtn" href="https://in.pinterest.com/bigbasketcom/"
+                        target="_blank"></a><a class="twitterBtn smGlobalBtn" href="https://twitter.com/Bigbasket_com"
+                        target="_blank"></a><a class="instagramBtn smGlobalBtn"
+                        href="https://www.instagram.com/bigbasketcom/" target="_blank"></a></div>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+        <div style="clear: both"></div>
+        <div class="footer-nav">
+            <div class="pop-cat">
+                <div class="footer-nav-header">
+                    <h4>POPULAR CATEGORIES:</h4>
+                </div>
+                <div class="footer-nav-list">
+                    <ul>
+                        <!-- ngRepeat: cat in vm.footerData.pcategories -->
+                        <li bindonce="" ng-repeat="cat in vm.footerData.pcategories" class="ng-scope"><a
+                                bo-href="cat.get_absolute_url+'?nc=bt'" bo-bind="cat.name"
+                                href="/cl/fruits-vegetables/?nc=bt">Fruits &amp; Vegetables</a>,</li>
+                        <!-- end ngRepeat: cat in vm.footerData.pcategories -->
+                        <li bindonce="" ng-repeat="cat in vm.footerData.pcategories" class="ng-scope"><a
+                                bo-href="cat.get_absolute_url+'?nc=bt'" bo-bind="cat.name"
+                                href="/pc/foodgrains-oil-masala/rice-rice-products/basmati-rice/?nc=bt">Basmati
+                                Rice</a>,</li><!-- end ngRepeat: cat in vm.footerData.pcategories -->
+                        <li bindonce="" ng-repeat="cat in vm.footerData.pcategories" class="ng-scope"><a
+                                bo-href="cat.get_absolute_url+'?nc=bt'" bo-bind="cat.name"
+                                href="/pc/beverages/tea/green-tea/?nc=bt">Green Tea</a>,</li>
+                        <!-- end ngRepeat: cat in vm.footerData.pcategories -->
+                        <li bindonce="" ng-repeat="cat in vm.footerData.pcategories" class="ng-scope"><a
+                                bo-href="cat.get_absolute_url+'?nc=bt'" bo-bind="cat.name"
+                                href="/pc/beauty-hygiene/otc/?nc=bt">OTC</a>,</li>
+                        <!-- end ngRepeat: cat in vm.footerData.pcategories -->
+                        <li bindonce="" ng-repeat="cat in vm.footerData.pcategories" class="ng-scope"><a
+                                bo-href="cat.get_absolute_url+'?nc=bt'" bo-bind="cat.name"
+                                href="/pc/bakery-cakes-dairy/dairy/cheese/?nc=bt">Cheese</a>,</li>
+                        <!-- end ngRepeat: cat in vm.footerData.pcategories -->
+                        <li bindonce="" ng-repeat="cat in vm.footerData.pcategories" class="ng-scope"><a
+                                bo-href="cat.get_absolute_url+'?nc=bt'" bo-bind="cat.name"
+                                href="/pc/foodgrains-oil-masala/dry-fruits/?nc=bt">Dry Fruits</a>,</li>
+                        <!-- end ngRepeat: cat in vm.footerData.pcategories -->
+                        <li bindonce="" ng-repeat="cat in vm.footerData.pcategories" class="ng-scope"><a
+                                bo-href="cat.get_absolute_url+'?nc=bt'" bo-bind="cat.name"
+                                href="/cl/foodgrains-oil-masala/?nc=bt">Foodgrains, Oil &amp; Masala</a>,</li>
+                        <!-- end ngRepeat: cat in vm.footerData.pcategories -->
+                        <li bindonce="" ng-repeat="cat in vm.footerData.pcategories" class="ng-scope"><a
+                                bo-href="cat.get_absolute_url+'?nc=bt'" bo-bind="cat.name"
+                                href="/pc/snacks-branded-foods/chocolates-sweets/?nc=bt">Chocolates &amp; Sweets</a>,
+                        </li><!-- end ngRepeat: cat in vm.footerData.pcategories -->
+                        <li bindonce="" ng-repeat="cat in vm.footerData.pcategories" class="ng-scope"><a
+                                bo-href="cat.get_absolute_url+'?nc=bt'" bo-bind="cat.name"
+                                href="/pc/beverages/soft-drinks/?nc=bt">Soft Drinks</a>,</li>
+                        <!-- end ngRepeat: cat in vm.footerData.pcategories -->
+                        <li bindonce="" ng-repeat="cat in vm.footerData.pcategories" class="ng-scope"><a
+                                bo-href="cat.get_absolute_url+'?nc=bt'" bo-bind="cat.name"
+                                href="/pc/beverages/energy-health-drinks/energy-drinks/?nc=bt">Energy Drinks</a>,</li>
+                        <!-- end ngRepeat: cat in vm.footerData.pcategories -->
+                        <li bindonce="" ng-repeat="cat in vm.footerData.pcategories" class="ng-scope"><a
+                                bo-href="cat.get_absolute_url+'?nc=bt'" bo-bind="cat.name"
+                                href="/cl/bakery-cakes-dairy/?nc=bt">Bakery, Cakes &amp; Dairy</a>,</li>
+                        <!-- end ngRepeat: cat in vm.footerData.pcategories -->
+                        <li bindonce="" ng-repeat="cat in vm.footerData.pcategories" class="ng-scope"><a
+                                bo-href="cat.get_absolute_url+'?nc=bt'" bo-bind="cat.name"
+                                href="/pc/foodgrains-oil-masala/edible-oils-ghee/olive-oils/?nc=bt">Olive Oils</a>,</li>
+                        <!-- end ngRepeat: cat in vm.footerData.pcategories -->
+                        <li bindonce="" ng-repeat="cat in vm.footerData.pcategories" class="ng-scope"><a
+                                bo-href="cat.get_absolute_url+'?nc=bt'" bo-bind="cat.name"
+                                href="/pc/foodgrains-oil-masala/edible-oils-ghee/sunflower-oils/?nc=bt">Sunflower
+                                Oils</a>,</li><!-- end ngRepeat: cat in vm.footerData.pcategories -->
+                        <li bindonce="" ng-repeat="cat in vm.footerData.pcategories" class="ng-scope"><a
+                                bo-href="cat.get_absolute_url+'?nc=bt'" bo-bind="cat.name"
+                                href="/pc/beauty-hygiene/personal-hygiene/liquid-soaps-bars/?nc=bt">Liquid Soaps &amp;
+                                Bars</a>,</li><!-- end ngRepeat: cat in vm.footerData.pcategories -->
+                    </ul>
+                </div>
+                <div style="clear: both"></div>
+            </div>
+            <div class="pop-brands">
+                <div class="footer-nav-header">
+                    <h4>POPULAR BRANDS:</h4>
+                </div>
+                <div class="footer-nav-list">
+                    <ul>
+                        <!-- ngRepeat: brand in vm.footerData.pbrands -->
+                        <li bindonce="" ng-repeat="brand in vm.footerData.pbrands" class="ng-scope"><a
+                                bo-href="'/pb/'+brand.brand.slug+'?nc=bt'" bo-bind="brand.brand.name"
+                                href="/pb/bb-royal?nc=bt">BB Royal</a>,</li>
+                        <!-- end ngRepeat: brand in vm.footerData.pbrands -->
+                        <li bindonce="" ng-repeat="brand in vm.footerData.pbrands" class="ng-scope"><a
+                                bo-href="'/pb/'+brand.brand.slug+'?nc=bt'" bo-bind="brand.brand.name"
+                                href="/pb/amul?nc=bt">Amul</a>,</li>
+                        <!-- end ngRepeat: brand in vm.footerData.pbrands -->
+                        <li bindonce="" ng-repeat="brand in vm.footerData.pbrands" class="ng-scope"><a
+                                bo-href="'/pb/'+brand.brand.slug+'?nc=bt'" bo-bind="brand.brand.name"
+                                href="/pb/haldirams?nc=bt">Haldirams </a>,</li>
+                        <!-- end ngRepeat: brand in vm.footerData.pbrands -->
+                        <li bindonce="" ng-repeat="brand in vm.footerData.pbrands" class="ng-scope"><a
+                                bo-href="'/pb/'+brand.brand.slug+'?nc=bt'" bo-bind="brand.brand.name"
+                                href="/pb/tropicana?nc=bt">Tropicana</a>,</li>
+                        <!-- end ngRepeat: brand in vm.footerData.pbrands -->
+                        <li bindonce="" ng-repeat="brand in vm.footerData.pbrands" class="ng-scope"><a
+                                bo-href="'/pb/'+brand.brand.slug+'?nc=bt'" bo-bind="brand.brand.name"
+                                href="/pb/kelloggs?nc=bt">Kelloggs</a>,</li>
+                        <!-- end ngRepeat: brand in vm.footerData.pbrands -->
+                        <li bindonce="" ng-repeat="brand in vm.footerData.pbrands" class="ng-scope"><a
+                                bo-href="'/pb/'+brand.brand.slug+'?nc=bt'" bo-bind="brand.brand.name"
+                                href="/pb/dettol?nc=bt">Dettol</a>,</li>
+                        <!-- end ngRepeat: brand in vm.footerData.pbrands -->
+                        <li bindonce="" ng-repeat="brand in vm.footerData.pbrands" class="ng-scope"><a
+                                bo-href="'/pb/'+brand.brand.slug+'?nc=bt'" bo-bind="brand.brand.name"
+                                href="/pb/mtr?nc=bt">MTR</a>,</li><!-- end ngRepeat: brand in vm.footerData.pbrands -->
+                        <li bindonce="" ng-repeat="brand in vm.footerData.pbrands" class="ng-scope"><a
+                                bo-href="'/pb/'+brand.brand.slug+'?nc=bt'" bo-bind="brand.brand.name"
+                                href="/pb/bru?nc=bt">BRU</a>,</li><!-- end ngRepeat: brand in vm.footerData.pbrands -->
+                        <li bindonce="" ng-repeat="brand in vm.footerData.pbrands" class="ng-scope"><a
+                                bo-href="'/pb/'+brand.brand.slug+'?nc=bt'" bo-bind="brand.brand.name"
+                                href="/pb/mccain?nc=bt">McCain</a>,</li>
+                        <!-- end ngRepeat: brand in vm.footerData.pbrands -->
+                        <li bindonce="" ng-repeat="brand in vm.footerData.pbrands" class="ng-scope"><a
+                                bo-href="'/pb/'+brand.brand.slug+'?nc=bt'" bo-bind="brand.brand.name"
+                                href="/pb/ariel?nc=bt">Ariel</a>,</li>
+                        <!-- end ngRepeat: brand in vm.footerData.pbrands -->
+                        <li bindonce="" ng-repeat="brand in vm.footerData.pbrands" class="ng-scope"><a
+                                bo-href="'/pb/'+brand.brand.slug+'?nc=bt'" bo-bind="brand.brand.name"
+                                href="/pb/britannia?nc=bt">Britannia</a>,</li>
+                        <!-- end ngRepeat: brand in vm.footerData.pbrands -->
+                        <li bindonce="" ng-repeat="brand in vm.footerData.pbrands" class="ng-scope"><a
+                                bo-href="'/pb/'+brand.brand.slug+'?nc=bt'" bo-bind="brand.brand.name"
+                                href="/pb/nescafe?nc=bt">Nescafe </a>,</li>
+                        <!-- end ngRepeat: brand in vm.footerData.pbrands -->
+                        <li bindonce="" ng-repeat="brand in vm.footerData.pbrands" class="ng-scope"><a
+                                bo-href="'/pb/'+brand.brand.slug+'?nc=bt'" bo-bind="brand.brand.name"
+                                href="/pb/colgate-not-to-be-used?nc=bt"> Colgate</a>,</li>
+                        <!-- end ngRepeat: brand in vm.footerData.pbrands -->
+                        <li bindonce="" ng-repeat="brand in vm.footerData.pbrands" class="ng-scope"><a
+                                bo-href="'/pb/'+brand.brand.slug+'?nc=bt'" bo-bind="brand.brand.name"
+                                href="/pb/horlicks?nc=bt">Horlicks</a>,</li>
+                        <!-- end ngRepeat: brand in vm.footerData.pbrands -->
+                        <li bindonce="" ng-repeat="brand in vm.footerData.pbrands" class="ng-scope"><a
+                                bo-href="'/pb/'+brand.brand.slug+'?nc=bt'" bo-bind="brand.brand.name"
+                                href="/pb/galaxy?nc=bt">Galaxy</a>,</li>
+                        <!-- end ngRepeat: brand in vm.footerData.pbrands -->
+                        <li bindonce="" ng-repeat="brand in vm.footerData.pbrands" class="ng-scope"><a
+                                bo-href="'/pb/'+brand.brand.slug+'?nc=bt'" bo-bind="brand.brand.name"
+                                href="/pb/complan?nc=bt">Complan</a>,</li>
+                        <!-- end ngRepeat: brand in vm.footerData.pbrands -->
+                    </ul>
+                </div>
+                <div style="clear: both"></div>
+            </div>
+            <div class="serve-cities">
+                <div class="footer-nav-header">
+                    <h4>CITIES WE SERVE:</h4>
+                </div>
+                <div class="footer-nav-list">
+                    <ul>
+                        <!-- ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Bangalore,</li><!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Hyderabad,</li><!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Mumbai,</li><!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Pune,</li><!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Chennai,</li><!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Delhi,</li><!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Mysore,</li><!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Madurai,</li><!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Coimbatore,</li><!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Vijayawada-Guntur,</li>
+                        <!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Kolkata,</li><!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Ahmedabad-Gandhinagar,</li>
+                        <!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Nashik Business,</li>
+                        <!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Lucknow-Kanpur,</li>
+                        <!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Gurgaon,</li><!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Vadodara,</li><!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Visakhapatnam,</li>
+                        <!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Surat,</li><!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Nagpur,</li><!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Patna,</li><!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Indore,</li><!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Chandigarh Tricity,</li>
+                        <!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Jaipur,</li><!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Bhopal,</li><!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Noida-Ghaziabad,</li>
+                        <!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Kochi,</li><!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Krishna District,</li>
+                        <!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Bhubaneshwar-Cuttack,</li>
+                        <!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Guwahati,</li><!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Renigunta,</li><!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Hubli,</li><!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Davanagere,</li><!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Trichy,</li><!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Amravati,</li><!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Raipur,</li><!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Rajkot,</li><!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Gwalior,</li><!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Bareilly,</li><!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Allahabad,</li><!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Hyderabad Rural,</li>
+                        <!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Bangalore Rural,</li>
+                        <!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Chennai Rural,</li>
+                        <!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Vizag Rural,</li>
+                        <!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Lucknow Rural,</li>
+                        <!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Noida Rural,</li>
+                        <!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Ahmedabad Rural,</li>
+                        <!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Bhopal Rural,</li>
+                        <!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Bhubaneswar Rural,</li>
+                        <!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Coimbatore Rural,</li>
+                        <!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Chandigarh Rural,</li>
+                        <!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Gurugram Rural,</li>
+                        <!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Guwahati Rural,</li>
+                        <!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Indore Rural,</li>
+                        <!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Kochi Rural,</li>
+                        <!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Kolkata Rural,</li>
+                        <!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Mumbai Rural,</li>
+                        <!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Mysore Rural,</li>
+                        <!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Nagpur Rural,</li>
+                        <!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Patna Rural,</li>
+                        <!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Pune Rural,</li><!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Surat Rural,</li>
+                        <!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Vadodara Rural,</li>
+                        <!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Jaipur Rural,</li>
+                        <!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Ranchi,</li><!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Nashik,</li><!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                        <li bindonce="" ng-repeat="(key, value) in vm.footerData.cities" bo-bind="value+','"
+                            class="ng-scope">Agra,</li><!-- end ngRepeat: (key, value) in vm.footerData.cities -->
+                    </ul>
+                </div>
+                <div style="clear: both"></div>
+            </div>
+            <div class="payment-opt">
+                <div class="footer-nav-header">
+                    <h4>PAYMENT OPTIONS:</h4>
+                </div>
+                <div class="footer-nav-list">
+                    <ul>
+                        <li><span
+                                style="font-size: 10px; font-weight:bold; display: inline-flex;vertical-align: middle;vertical-align: -webkit-baseline-middle; width: 50px;">CASH
+                                ON DELIVERY</span></li>
+                        <li><i class="payment payment-card_visa"></i></li>
+                        <li><i class="payment payment-card_mastercard"></i></li>
+                        <li><i class="payment payment-paytm_logo"></i></li>
+                        <li><i class="payment payment-mobikwik_Logo"></i></li>
+                        <li><i class="payment payment-rupay"></i></li>
+                        <li><i class="payment payment-amex"></i></li>
+                    </ul>
+                </div>
+                <div style="clear: both"></div>
+            </div>
+        </div>
+    </footer>
+    <div class="clearfix"></div><!-- ./Footer -->
+    <div class="copyright">
+        <div class="copy-wrap text-center">
+            <p><a href="javascript:void(0);" onclick="javascript:switch_to_mw();" style="color: #808080;">View Mobile
+                    Site</a> | Copyright © 2021-2023 Supermarket Grocery Supplies Pvt Ltd</p>
+        </div>
+    </div>
+  
+    <script id="tmplt-autosearch" type="text/x-handlebars-template">
+       {{#if data}}
+        <ul id="uiv2-autosearch-list">
+       {{/if}}
+       {{#each data}}
+            {{#each this.store_details_to_use}}
+                {{#if ../this.name}}
+                    <li>
+                        {{#if ../../this.simg}}
+                            {{#if ../../../alt_suggestions}}
+                                <a href="{{ ../../../../this.url }}?nc=sugg-as&q={{ ../../../../this.term }}" onclick="return  $(document).trigger('screenViewReferralsEvent', [{}]);" class="uiv2-img-product-search"><img src="{{ ../../../../this.simg }}" alt="" height="30" width="30"></a>
+                            {{else}}
+                                <a href="{{ ../../../../this.url }}?nc=as&q={{ ../../../../this.term }}" class="uiv2-img-product-search" onclick="return  $(document).trigger('screenViewReferralsEvent', [{}]);"><img src="{{ ../../../../this.simg }}" alt="" height="30" width="30"></a>
+                            {{/if}}
+                        {{else}}
+                            <div class="uiv2-push-left" style="width:30px; height:30px;"></div>
+                        {{/if}}
+                        {{#if ../../alt_suggestions}}
+                            <a href="{{ ../../../this.url }}?nc=sugg-as&q={{ ../../../../this.term }}" class="uiv2-img-product-name" onclick="return  $(document).trigger('screenViewReferralsEvent', [{}]);"><p>{{ ../../../this.brand }}</p><span>{{ ../../../this.name }}</span></a>
+                        {{else}}
+                            <a href="{{ ../../../this.url }}?nc=as&q={{ ../../../../this.term }}" class="uiv2-img-product-name" onclick="return  $(document).trigger('screenViewReferralsEvent', [{}]);"><p>{{ ../../../this.brand }}</p><span>{{ ../../../this.name }}</span></a>
+
+                        {{/if}}
+                        <div class="uiv2-product-weight"><span>{{ ../../this.weight }}</span></div><div class="uiv2-product-cost"><span><span class="WebRupee">Rs.</span> {{ ../../this.price }}</span><input type="hidden" id="hdnsp_{{ ../../this.pid }}" value="{{ ../../this.price }}"></div><!----START for standard and express icon------------------>
+                            {{#ifCond this.fi_type "darkstore-express"}}
+                                <div class="autoSearch_express"><a href="" class="exp-slot autoSearch_express" title="{{ this.next_slot }}"></a><input type="hidden" name='cart-item-mode'
+                                           id="cartitem_mode_{{../../../../this.pid}}"
+                                           value="express" /></div>
+                            {{else}}
+                                {{#ifCond this.fi_type "jit"}}
+                                    <div class="autoSearch_standard"><a href="" class="normal-slot autoSearch_standard" title="{{ this.next_slot }}"></a><input type="hidden" name='cart-item-mode'
+                                               id="cartitem_mode_{{../../../../this.pid}}"
+                                               value="normal" /></div>
+                                {{else}}
+                                    <div class="autoSearch_standard"><a href="" class="normal-slot autoSearch_standard" title="{{ this.next_slot }}"></a><input type="hidden" name='cart-item-mode'
+                                               id="cartitem_mode_{{../../../../this.pid}}"
+                                               value="normal" /></div>
+                                {{/ifCond}}
+                            {{/ifCond}}
+                        <!----END for standard and express icon------------------><div class="uiv2-rate-count-btn uiv2-search-qty-widget"><span class="uiv2-qty-label">Qty</span><input value="1" type="text" id="uiv2-qty-{{ ../../this.pid }}" name="" maxlength="{{../../max_qty_length}}"></div><div class="uiv2-product-add-btn">
+
+                            {{#ifCond ../../this.availability  2}}
+                                <img src="/static/images/searchOutOfStock.png" alt="Out of stock"
+                                     style="width:60px; margin-top: 10px;" />
+                            {{else}}
+                                <input class="uiv2-a2c-autosearch" value="ADD" type="button"
+                                       id="uiv2-a2c-{{ ../../../this.pid }}">
+                            {{/ifCond}}
+
+                        </div><input type="hidden" id="uiv2-pdesc-{{ ../../this.pid }}" value="{{ ../../this.text  }}" /></li>
+                {{/if}}
+            {{/each}}
+       {{else}}
+            {{#unless alt_suggestions}}
+                <p class="uiv2-commonly-searched" style="margin-left: 8px;">Commonly Searched</p>
+                {{#each top_searches}}
+                <ul id="uiv2-autosearch-list" class="uiv2-top-searches">
+                {{#each this}}
+                    <li><a href="/ps/?q={{ this }}">{{{ this }}}</a></li>
+                {{/each}}
+                </ul>
+                {{/each}}
+            {{/unless}}
+       {{/each}}
+       {{#if data}}
+        </ul>
+            {{#if data}}
+                    <div class="uiv2-no-result-found" style="margin-top: 10px;"><p class="uiv2-no-result" id="uiv2-no-result" class="uiv2-interested-p"
+                           style="margin-left: 4px;">Suggested Alternative Results:</p></div>
+
+            {{/if}}
+       {{/if}}
+        <div style="margin-left: -1px;">
+        {{#each alt_pb_pc_res}}
+            <ul id="uiv2-autosearch-list-alt" class="uiv2-top-searches" style="width:160px;margin:0;"><li><a href="{{ this }}">{{@key}}</a></li></ul>
+        {{/each}}
+        </div></script>
+    <script id="tmplt-cart-items" type="text/x-handlebars-template">
+        {{#each items}}
+            <li><div class="uiv2-items-img"><a href="#"><img src="{{ this.simg }}"  alt="{{ this.description }}" width="65" height="61" ></a></div><div class="uiv2-items-content-wrapper"><div class="uiv2-items-content"><span><a href="#"> {{ this.brand }} </a></span><p><a href="#">{{ this.description }}</a></p></div><div class="uiv2-items-button-block"><div class="uiv2-grid-count-btn"><button class="icon icon-decrease-qty-search-popup">-</button><input type="text" class="text-change-qty-search-popup" id="p_{{this.pid}}" value="{{this.quantity}}" maxlength="{{max_qty_length}}" /><button class="icon icon-increase-qty-search-popup">+</button></div><span class="uiv2-items-rate"><span class="WebRupee">Rs.</span> {{ this.mrp }}</span>
+                        {{#if this.saving_int}}
+                        <div class="uiv2-items-saved-rate"><span>SAVED</span><span><span class="WebRupee">Rs.</span> {{ this.saving }}</span></div>
+                        {{/if}}
+                    </div></div><a href="javascript:void(0);" id="p_remove_{{ this.pid }}" class="uiv2-remove-product"></a></li>
+        {{else}}
+
+            <li class="uiv2-cart-placeholder-msg"><p></p></li>
+
+        {{/each}}
+    </script><!-- End Handle bar templates -->
+    <div id="scratchListContainer"></div>
+    <div id="shoplist-mask" style="width: 100%; height: 100%;"></div>
+    <div style="display:none;" class="loadShoplistMask">
+        <div class="loadShoplistContainer">
+            <div id="loadShoplist"><img
+                    src="https://www.bbassets.com/static/v2571/images/loading_brown.gif"><span>Loading...</span></div>
+        </div>
+    </div><!-- shopping list/scratch list popups-->
+    <div class="shoplistContainer"></div>
+    <div id="help-scl" style="display:none;"></div>
+    <div id="popup-content"></div>
+    <!--Custom alert -->
+    <div id="custom-alert" style="display:none;">
+        <div class="uiv2-popup-alert">
+            <!-- <a class="btn btn-close-black uiv2-right close-icon" href=""></a> --><span id="alert-msg"></span>
+            <div class="uiv2-mar-t-20 uiv2-navi-buttons"><span id="ok_button" class="uiv2-mar-r-30 bg-gradient-yellow border-radius-4px shadow-yellow
+                   uiv2-yellow-btn-small" style="padding:5px 15px;float:none;"><a id="alert_ok"
+                        href="javascript://">Ok</a></span><span id="cancel_button" style="display:none;" class="bg-gradient-gray border-radius-4px
+            shadow-grey uiv2-btn-grey-small uiv2-cancel"><a id="alert_cancel" href="javascript://">CANCEL</a></span>
+            </div>
+        </div>
+    </div>
+    <div class="uiv2-widgets-bottom-slide" id="show-message">
+        <div class="uiv2-widget-header uiv2-div100"><span class="uiv2-wid-title uiv2-left"
+                id="show-message-subject">Welcome</span><span class="uiv2-right"><a href="#"
+                    class="uiv2-left uiv2-min-max-btn"></a><a href="#" class="uiv2-left uiv2-max-min-btn"
+                    style="display:none;"></a><a href="#" class="uiv2-left uiv2-close-btn-n"></a></span></div>
+        <div class="uiv2-widget-contents uiv2-div100"><span class="uiv2-pop-c-content" id="show-message-body"></span>
+        </div>
+    </div>
+</div>

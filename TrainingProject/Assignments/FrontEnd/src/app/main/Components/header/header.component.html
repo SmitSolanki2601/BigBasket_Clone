@@ -1,0 +1,358 @@
+<div class="container-fluid">
+
+  <div class="container-fluid text-center p-1 m-1 " style="background-color: #efedbe; font-size:small;">
+    Welcome to bigbasket !
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-3">
+        <div class="row w-100">
+          <div class="container-fluid m-0 d-block">
+            <div>
+              <a class="navbar-brand ">
+                <img src="../../../../assets/logo/MicrosoftTeams-image (2).png" alt="BigbAsketLogo" width="180"
+                  height="90" alt="" class="ms-5">
+              </a>
+            </div>
+          </div>
+          <!-- <nav class="navbar w-100 navbar-light bg-light" aria-label=""> -->
+          <div class="row">
+            <div class="ms-5 mt-2">
+              <!-- <label class="btn lable pc fw-bold text-white" for="category"> SHOP BY CATEGORY </label> -->
+
+              <!-- <div class="input-group ">
+                <select class="btn fw-bold text-dark" [(ngModel)]="selectedCategory.id" (change)="onSelect($event.target.value)">
+               
+                    <option  value="0" selected>SHOP BY CATEGORY </option>
+                  <option class="btnh"  *ngFor="let category of crud.Categories " value="category.categoryId">{{category.categoryName}}</option>
+                
+                </select> 
+                <select>
+                  <option *ngFor="let subcategory of category" value= {{subcategory.categoryId}}>{{subcategory.categoryName}}</option>
+                </select>
+                
+              </div> -->
+              <button type="button" class="btn pc dropdown-toggle fw-bold text-white" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                SHOP BY CATEGORY
+              </button>
+              <ul class="dropdown-menu">
+                <li *ngFor="let item of crud.Categories"><a class="dropdown-item btnh"
+                    (click)="onSelect(item.categoryId!)" value="item.categoryId!">{{item.categoryName}}</a></li>
+
+                <!-- <li><a class="dropdown-item  btnh" href="#">Foodgrains,Oil & Masala</a></li>
+                <li><a class="dropdown-item  btnh" href="#">Backery, Cakes & Dairy</a></li>
+                <li><a class="dropdown-item  btnh" href="#">Bevarages</a></li>
+                <li><a class="dropdown-item  btnh" href="#">Snacks & Branded Foods</a></li>
+                <li><a class="dropdown-item  btnh" href="#">Bavrages</a></li>
+                <li><a class="dropdown-item  btnh" href="#">Beauty & Hygiene</a></li>
+                <li><a class="dropdown-item  btnh" href="#">Cleaning & Household </a></li>
+                <li><a class="dropdown-item  btnh" href="#">Kitchen,Garden & Pets</a></li>
+                <li><a class="dropdown-item  btnh" href="#">Eggs,Meat & fish</a></li>
+                <li><a class="dropdown-item  btnh" href="#">Gourmet & World Food </a></li>
+                <li><a class="dropdown-item  btnh" href="#">Baby Care</a></li>
+                <li><a class="dropdown-item  btnh" href="#">View All </a></li> -->
+              </ul>
+              <!-- <button type="button" class="btnh btn">OFFERS</button> -->
+            </div>
+          </div>
+          <div>
+          </div>
+
+        </div>
+        <!-- </nav> -->
+      </div>
+
+      <div class="col-9 d-block me-auto">
+        <div class="row ms-4">
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a href="#" class="text-black nav-link"> 1860 123 1000 </a>
+            </li>
+            <li class="nav-item">
+              <!-- <a href="#" class="text-black nav-link">bangalore</a> -->
+              <div class="dropdown">
+                <a href="#" class="text-black nav-link" data-bs-toggle="dropdown">
+                  bangalore
+                </a>
+                <div class="dropdown-menu">
+                  <div class="container" style="width: 18rem;">
+                    <div>
+                      <div class="d-flex justify-content-evenly mt-2">
+                        <label for="l" style="font-size:small ;">Select Your City</label>
+                        <input type="text" name="location" id="l">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item" *ngIf="!loginService.userLoggedIn">
+              <a class="text-black nav-link" data-bs-toggle="modal" data-bs-target="#registermodal" role="button">Sign
+                Up &nbsp;&nbsp;/</a>
+              <div class="container">
+                <div class="modal fade" id="registermodal" tabindex="-1" aria-labelledby="registermodal"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered ">
+                    <div class="modal-content">
+                      <div class="modal-header text-center  bg-light">
+                        <div class="text-center">
+                          <h5 class="modal-title text-center" id="registermodal"
+                            stylesheet="http://fonts.googleapis.com/css?family=Montserrat:400,700,400italic"
+                            style=" color: black; font-size: xx-large; text-align: center;">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            SIGN UP
+                          </h5>
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="p-3">
+                          <!-- <div class="card " style="width: 30rem;"> -->
+                          <!-- <div class="card-header"> 
+                                      color:chartreuse
+                           
+                                </div> -->
+                          <!-- <div class=" card-body "> -->
+                          <form novalidate #userForm="ngForm" [formGroup]="userform" (ngSubmit)="register()"
+                            autocomplete="off">
+
+                            <div class="mb-2">
+                              <label for="firstName" class="form-label font-light">First Name</label>
+                              <div class="input-group has-validation">
+                                <input type="text" #firstName
+                                  [ngClass]="{'form-control': true, 'is-invalid': userform.get('firstName')?.invalid &&
+                                                  (userform.get('firstName')?.dirty || userform.get('firstName')?.touched)} " id="firstName"
+                                  name="firstName" formControlName="firstName" placeholder="Enter your first name">
+
+                                <div class="invalid-feedback">
+                                  First Name is required.
+                                </div>
+                                <!-- <div *ngIf="">Username cannot contain space.</div>   -->
+                              </div>
+                            </div>
+
+                            <div class="mb-2">
+                              <label for="lastName" class="form-label fw-">Last Name</label>
+                              <div class="input-group has-validation">
+                                <input type="text" #lastName
+                                  [ngClass]="{'form-control': true, 'is-invalid': userform.get('lastName')?.invalid &&
+                                                  (userform.get('lastName')?.dirty || userform.get('lastName')?.touched)}" id="lastName"
+                                  name="lastName" formControlName="lastName" placeholder="Enter your last name">
+                                <div class="invalid-feedback">
+                                  This field is required.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="mb-2">
+                              <label for="PhoneNumber" class="form-label">PhoneNumber</label>
+                              <div class="input-group has-validation">
+                                <input type="text" #lname
+                                  [ngClass]="{'form-control': true, 'is-invalid': userform.get('PhoneNumber')?.invalid &&
+                                                  (userform.get('PhoneNumber')?.dirty || userform.get('PhoneNumber')?.touched)}"
+                                  id="PhoneNumber" name="PhoneNumber" formControlName="PhoneNumber"
+                                  placeholder="Enter phone number">
+                                <div class="invalid-feedback">
+                                  {{userform.get('PhoneNumber')?.hasError('required') ? 'This field is
+                                  required.':'Must be 10 digit only'}}
+                                </div>
+                              </div>
+                            </div>
+                            <div class="mb-2">
+                              <label for="email" class="form-label">Email</label>
+                              <div class="input-group has-validation">
+                                <input type="text" #email [ngClass]="{'form-control': true, 'is-invalid': userform.get('email')?.invalid &&
+                                                  (userform.get('email')?.dirty || userform.get('email')?.touched)}"
+                                  id="email" name="email" formControlName="email"
+                                  placeholder="Enter your email address">
+                                <div class="invalid-feedback">
+                                  {{userform.get('email')?.hasError('required') ? 'This field is
+                                  required.':'Invalid email'}}
+                                </div>
+                              </div>
+                            </div>
+                            <div class="mb-2">
+                              
+                              <div class="input-group has-validation my-2" id="gender">
+                                <label class="form-label" for="gender">Choose your gender</label>
+                                <label class="custom-control-label ms-2" for="male">Male
+                                <input id="male" type="radio" [value]="1" name="genderID" formControlName="genderID" />
+                                <span class="checkmark"></span>
+                              </label>
+                              <label class="custom-control-label ms-2" for="female">Female
+                                <input id="female" type="radio" [value]="2" name="genderID"
+                                  formControlName="genderID" />
+                                  <span class="checkmark"></span>
+                                  </label>
+                                <div class="invalid-feedback">
+                                  {{userform.get('genderID')')?.hasError('required') ? 'This field is
+                                  required.'}}
+                                </div>
+                              </div>
+                            </div>
+
+
+                            <!-- <div clas="mb-2 ps-5">
+                                <div>
+                                  <div class="mb-1">
+                                  
+                                  </div>
+
+                                  <div class="mb-1">
+             
+                                  </div>
+              
+                                </div>
+                              </div> -->
+                            <!-- Showing error method -->
+
+                            <div class="mb-2">
+                              <label for="password" class="form-label">Password</label>
+                              <div class="input-group has-validation">
+                                <input type="password"
+                                  [ngClass]="{'form-control': true, 'is-invalid': userform.get('password')?.invalid &&
+                                                  (userform.get('password')?.dirty || userform.get('password')?.touched)}" #password
+                                  formControlName="password" name="password" id="password" formControlName="password"
+                                  placeholder="Enter your password">
+                                <div class="invalid-feedback">
+                                  {{userform.get('password')?.hasError('required') ? 'This field is
+                                  required.' : 'Invalid password'}}
+                                </div>
+                              </div>
+                            </div>
+                            <div class="d-flex justify-content-evenly mt-4 btn-group">
+
+                              <button type="submit" [disabled]="!userForm.valid" class="btn btn-dark me-2 "
+                                data-bs-dismiss="modal">Submit</button>
+                              <button type="button" class="btn btn-dark me-2" (click)="reset()">Reset</button>
+
+                            </div>
+                          </form>
+
+                          <!-- <div>
+                                          {{userform.value | json}}
+                                      </div> -->
+
+                          <!-- </div> -->
+
+
+
+                        </div>
+                      </div>
+                      <div class="text-center mb-2" style=" font-size:medium ; font-weight: 600;">
+                        <a [routerLink]="['/login']" routerLinkActive="router-link-active" class="text-black"
+                          role="button"> Already Have an Account ? <span class="ms-2" style="color: rgb(0, 110, 255);">
+                            Login !!!
+                          </span></a>
+                      </div>
+                      <!-- <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary">Save changes</button>
+                              </div> -->
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </li>
+            <li class="nav-item mt-2 " *ngIf="!loginService.userLoggedIn">
+              <a class="text-decoration-none" appPreventDoubleClick [routerLink]="['/login']"
+                routerLinkActive="router-link-active" class="text-black" role="button"> <span class="ms-2"
+                  style="color: rgb(0, 110, 255);">
+                  Login
+                </span></a>
+            </li>
+            <li class="nav-item mt-2" *ngIf="loginService.userLoggedIn">
+              <div class="dropdown">
+                <a class="dropdown-toggle text-decoration-none text-black" role="button" id="dropdownMenuLink2"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Welcome User
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                  <li><a class="dropdown-item" role="button" [routerLink]="['/profile']"
+                      routerLinkActive="router-link-active"><em class="fa fa-user-circle"></em> Profile </a></li>
+                  <li><a class="dropdown-item" role="button" (click)="logout()"><em class="fa fa-xmark"></em> Log
+                      Out</a></li>
+                </ul>
+              </div>
+            </li>
+            <!-- <div class="mt-2 text-decoration-none" style=" font-size:medium ; font-weight: 600;">
+        
+        </div> -->
+          </ul>
+          <!-- <span class="ms-auto">
+           
+          </span>
+          <span class="ms-2">
+          
+          </span>
+          <span class="ms-2">
+      
+          </span> -->
+        </div>
+        <div class="row d-flex mt-2 w-100">
+          <!-- <nav class="navbar navbar-light bg-light Sticky-top" aria-label=""> -->
+          <div class="container-fluid d-flex">
+            <!-- <a class="navbar-brand p">
+              <img src="bb.jpg" width="150" height="100" alt="" class="ms-5">
+            </a> -->
+            <div class="container ms-0 me-5  pt-2">
+              <form class="col-md-12 " [formGroup]="searchForm" autocomplete="off">
+                <div class="input-group">
+                  <input formControlName="search" type="text" class="form-control" placeholder="Search">
+                  <span class="input-group-btn">
+                    <button class="btn pc" role="button" (click)="onSearch()">Search</button>
+                  </span>
+                </div>
+              </form>
+
+            </div>
+
+            <div class="card ms-4" style="width: 10rem; height: 50px;">
+              <div class="card-body">
+                <h5 class="card-title text-center" role="button">My Cart</h5>
+              </div>
+            </div>
+          </div>
+          <!-- </nav> -->
+        </div>
+        <div class="row  mr-auto">
+          <div class="col-3 container-fluid d-flex  m-0">
+            <div type="button" class="btnh btn   fw-bold p-auto">OFFERS</div>
+            <div class="div border border-light w-100"> </div>
+          </div>
+
+
+          <!-- <div class="row">
+            <div class="btn-group ms-5">
+              <button type="button" class="btn pc dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Shop by Category
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Foods & vegetable</a></li>
+                <li><a class="dropdown-item" href="#">Foodgrains,Oil & Masala</a></li>
+                <li><a class="dropdown-item" href="#">Backery, Cakes & Dairy</a></li>
+                <li><a class="dropdown-item" href="#">Bevarages</a></li>
+                <li><a class="dropdown-item" href="#">Snacks & Branded Foods</a></li>
+                <li><a class="dropdown-item" href="#">Bavrages</a></li>
+                <li><a class="dropdown-item" href="#">Beauty & Hygiene</a></li>
+                <li><a class="dropdown-item" href="#">Cleaning & Household </a></li>
+                <li><a class="dropdown-item" href="#">Kitchen,Garden & Pets</a></li>
+                <li><a class="dropdown-item" href="#">Eggs,Meat & fish</a></li>
+                <li><a class="dropdown-item" href="#">Gourmet & World Food </a></li>
+                <li><a class="dropdown-item" href="#">Baby Care</a></li>
+                <li><a class="dropdown-item" href="#">View All </a></li>
+              </ul>
+              <button type="button" class="btnh btn">OFFERS</button>
+            </div>
+          </div> -->
+
+
+        </div>
+
+      </div>
+
+    </div>

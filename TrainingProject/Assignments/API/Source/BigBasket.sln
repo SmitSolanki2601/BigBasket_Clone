@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32428.217
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigBasket", "BigBasket\BigBasket.csproj", "{0FEF6556-296B-42A6-8FA1-3D146097E7EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0FEF6556-296B-42A6-8FA1-3D146097E7EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FEF6556-296B-42A6-8FA1-3D146097E7EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FEF6556-296B-42A6-8FA1-3D146097E7EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FEF6556-296B-42A6-8FA1-3D146097E7EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C607506F-8EA4-4322-ABDF-72E16BE220DF}
+	EndGlobalSection
+EndGlobal

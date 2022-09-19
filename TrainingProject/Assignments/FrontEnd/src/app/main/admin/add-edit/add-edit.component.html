@@ -1,0 +1,93 @@
+<body>
+
+
+    <!-- <header id="main-header" class="py-2 text-white bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1><em class="fa fa-pencil"></em> Posts</h1>
+                </div>
+            </div>
+        </div>
+    </header> -->
+
+    <!-- Actions -->
+
+    <section id="action" class="py-4 mb-4 bg-light">
+        <div class="container">
+            <div class="row">
+                <form class="col-md-6 ms-auto"  [formGroup]="searchForm"  autocomplete="off">
+                    <div class="input-group">
+                        <input formControlName="search" type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary" role ="button" (click)="onSearch()">Search</button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+            <!-- <app-searchedproduct></app-searchedproduct> -->
+        </div>
+    </section>
+
+
+    <!-- Posts -->
+
+    <section id="posts">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Latest Posts</h4>
+                        </div>
+                        <table class="table table-striped">
+                            <caption></caption>
+                            <thead class="text-white bg-dark">
+                                <tr>
+                                    <th scope="">#</th>
+                                    <th scope="">Category</th>
+                                    <th scope="">Subcategory</th>
+                                    <th scope="">Date Posted</th>
+                                    <th scope=""></th>
+                                </tr>
+                            </thead>
+                            <tbody >
+                                <tr *ngFor="let category of searchService.productsArray">
+                                    <td>{{category.productName}}</td>
+                                    <td>category.productName</td>
+                                    <td>Web Development</td>
+                                    <td>July 27, 2021</td>
+                                    <td><a href="details.html" class="btn btn-secondary">
+                                            <em class="fa fa-angle-double-right"> Details</em>
+                                        </a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <nav class="ms-4" aria-label="">
+                            <ul class="pagination">
+                                <li class="page-item disabled"><a href="#" class="page-link">Previous</a></li>
+                                <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                                <li class="page-item"><a href="#" class="page-link">2</a></li>
+                                <li class="page-item"><a href="#" class="page-link">3</a></li>
+                                <li class="page-item"><a href="#" class="page-link">Next</a></li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.ckeditor.com/4.17.2/standard/ckeditor.js"></script> -->
+    <script>
+        CKEDITOR.replace('editor1');
+    </script>
+</body>
+
+
+
