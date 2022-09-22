@@ -1,0 +1,33 @@
+
+<div class="container container-fluid d-flex justify-content-center p-5">
+    <div class="card" style="width: 60rem;">
+        <div class="card-header">   
+          <!-- <marquee scrollamount="14" behavior="alternate" loop="3"> -->
+            <h1 class="mb-0 card-title text-center" style=" font-weight: bolder; font-size: 90px !important">  Oops!</h1>
+          <!-- </marquee>   -->
+        </div>
+      
+        <div class="card-body text-center p-d5">
+            <!-- <div>
+                <img src="../../assets/error.jpeg" alt="image" >
+            </div> -->
+           
+            <div class=" " role="alert"> 
+              
+                <i class="fa fa-warning text-center" role="none" aria-hidden="true" style=" font-size: 30px" >             
+                   404 Not Found                  
+                </i> 
+                <div class="div p-5 row">
+                    <b>
+                       Sorry, an error has occured,Requested page not found !                       
+                    </b>
+                </div>
+                <div class="div d-flex justify-content-center m-2 ">
+                    <div [routerLink]="['']" routerLinkActive="router-link-active"  class="btn btn-primary btn-sm m-3">Take Me Home</div>
+                    <div class="btn btn-primary btn-sm m-3">Contact Support </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

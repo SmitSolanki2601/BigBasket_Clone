@@ -1,0 +1,28 @@
+<!-- <ng-container *ngFor="let item of productService.products | slice:0:(17/4); let i=index"> -->
+    <div class=" d-flex">
+        <div class="row">
+            <ng-container *ngFor="let item of productService.products ,let i=index">
+                <div class="col-3 p-2">
+                    <div>
+                        <div class=" card w-100">
+                            <div class="card-header align-self-center"><img class="img-fluid" [src]=item.productImgUrl alt="img">
+                            </div>
+                            <div class="div card-body">
+                                <h1 style="font-size:x-small;">{{item.brand}}<br>
+                                    {{item.productName}} <br><br>500 g</h1>
+                                <div class="bg-light">
+                                    <h1>MRP:
+                                        {{item.price | currency:'INR' }} </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+         
+    
+            </ng-container>
+        </div>
+    </div>
+
+<!-- </ng-container> -->

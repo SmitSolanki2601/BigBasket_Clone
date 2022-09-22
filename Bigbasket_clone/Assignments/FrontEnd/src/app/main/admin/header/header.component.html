@@ -1,0 +1,98 @@
+<!-- <nav class="border-4 border-bottom border-warning navbar navbar-expand-lg navbar-dark bg-light" aria-label="">
+    <div class="py-1 container-fluid">
+      <a class="navbar-brand" href="index.html">Index Page</a>
+      <div class="container-fluid d-flex justify-content-center">
+        <div class="row mt-4 mb-4">
+          <div class="col-sm-1 com-md-6 col-lg-12 text-white">
+            <div> WELCOME ADMIN !!!</div>
+          </div>
+        </div>
+      </div> -->
+
+<!-- </div> -->
+<div class="container-fluid ">
+
+  <!-- <div class="row w-100 bg-light">
+          <div class="col-sm-12  bg-light">
+              
+            <nav class="navbar  navbar-expand-sm d-flex" style="background-color: rgb(134, 132, 132);">
+
+              <div class="container-fluid text-white">
+                Links -->
+  <!-- <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">User-Details</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link text-white" href="#">Category-Details</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link text-white" href="#">Subcategory-Details</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="container-fluid justify-content-end">
+                <a class="navbar-brand" href="#">
+                  <img src="logo.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
+                </a>
+              </div>
+            
+            </nav>
+      </div>  -->
+  <nav class="p-0 navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container">
+      <a [routerLink]="['/admin']" routerLinkActive="router-link-active"  class="navbar-brand">BigBasket</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+
+          <li class="px-2 nav-item">
+            <a [routerLink]="['./user']" routerLinkActive="router-link-active"  class="nav-link">Users</a>
+          </li>
+
+          <li class="px-2 nav-item">
+            <a [routerLink]="['./category']" routerLinkActive="router-link-active"   class="nav-link">Categories</a>
+          </li>
+
+          <li class="px-2 nav-item">
+            <a [routerLink]="['./product']" routerLinkActive="router-link-active" class="nav-link">Products</a>
+          </li>
+          <li class="px-2 nav-item">
+            <a [routerLink]="['./order']" routerLinkActive="router-link-active" class="nav-link">Orders</a>
+          </li>
+
+        </ul>
+
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown me-3">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+              <em class="fa fa-user"></em> Welcome Admin
+            </a>
+
+            <ul class="px-2 dropdown-menu">
+              <li>
+                <a href="profile.html" class=" text-decoration-none text-dark dropown-item">
+                  <em class="fa fa-user-circle"></em> Profile
+                </a>
+              </li>
+              <li>
+                <a href="settings.html" class=" text-decoration-none text-dark dropown-item">
+                  <em class="fa fa-gear"></em> Settings
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item" routerLinkActive="router-link-active">
+            <a [routerLink]="['/login']"  (click)="logout()"  class="nav-link">
+              <em class="fa fa-user-times"></em> Logout
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+<hr>
+<!-- </nav> -->

@@ -1,0 +1,164 @@
+<!-- <header id="main-header" class="py-2 text-white bg-primary">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1><em class="fa fa-pencil"></em> Posts</h1>
+            </div>
+        </div>
+    </div>
+</header> -->
+<!-- <nav class="border-4 border-bottom border-warning navbar navbar-expand-lg navbar-dark bg-light" aria-label="">
+    <div class="py-1 container-fluid">
+      <a class="navbar-brand" href="index.html">Index Page</a>
+      <div class="container-fluid d-flex justify-content-center">
+        <div class="row mt-4 mb-4">
+          <div class="col-sm-1 com-md-6 col-lg-12 text-white">
+            <div> WELCOME ADMIN !!!</div>
+          </div>
+        </div>
+      </div> -->
+
+<!-- </div> -->
+
+
+  <!-- </nav> -->
+  <body>
+
+
+    <!-- <header id="main-header" class="py-2 text-white bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1><em class="fa fa-pencil"></em> Posts</h1>
+                </div>
+            </div>
+        </div>
+    </header> -->
+
+    <!-- Actions -->
+
+    <section id="action" class="py-4 mb-4 bg-light">
+        <div class="container">
+            <div class="row">
+                <form class="col-md-12 "  [formGroup]="searchForm"  autocomplete="off">
+                    <div class="input-group">
+                        <input formControlName="search" type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary" role ="button" (click)="onSearch()">Search</button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+             <!-- <app-searchedproduct></app-searchedproduct>  -->
+        </div>
+        <!-- <app-searchedproduct></app-searchedproduct> -->
+    </section>
+
+
+    <!-- Posts -->
+
+    <!-- <section id="posts">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card"> 
+                        <div class="card-header">
+                            <h3>Categories</h3>
+                        </div>
+                        <table class="table table-striped">
+                            <caption></caption>
+                            <thead class="text-white bg-dark">
+                                <tr>
+                                    <th scope="">#</th>
+                                    <th scope="">Category</th>
+                                    <th scope="">Subcategory</th>
+                                    <th scope="">Date Posted</th>
+                                    <th scope=""></th>
+                                </tr>
+                            </thead>
+                            <tbody class="p-2" *ngIf="displaySearchedElements; else showThis">
+                                <tr *ngFor="let category of searchService.Categories" >
+                                    <td>{{category.categoryId}}</td>
+                                    <td>{{category.categoryName}}</td>
+                                    <td>{{category.parentId}}</td>
+                                    <td>{{category.catAddedDate | date:'dd/MM/yyyy HH:mm:ss'}}</td>
+                                    <td class="d-flex justify-content-evenly">
+                                        <a  class="btn btn-secondary" role="button" style="font-size: x-smaller;">
+                                            <i class="fa fa-pencil"  aria-hidden="true"></i>
+                                        </a>
+                                        <a href="details.html" class="btn btn-secondary">
+                                            <i class="fa-solid  fa-trash"></i>
+                                        </a></td>
+                                </tr>
+                            </tbody>
+                            <ng-template #showThis >
+                                <tbody class="p-2"  >
+                                    <tr *ngFor="let category of searchService.Categories" >
+                                        <td>{{category.categoryId}}</td>
+                                        <td>{{category.categoryName}}</td>
+                                        <td>{{category.parentId}}</td>
+                                        <td>{{category.catAddedDate | date:'dd/MM/yyyy HH:mm:ss'}}</td>
+                                        <td class="d-flex justify-content-evenly">
+                                            <a  class="btn btn-secondary" role="button" style="font-size: x-smaller;">
+                                                <i class="fa fa-pencil"  aria-hidden="true"></i>
+                                            </a>
+                                            <a href="details.html" class="btn btn-secondary">
+                                                <i class="fa-solid  fa-trash"></i>
+                                            </a></td>
+                                    </tr>
+                                </tbody>
+                            </ng-template>
+                            
+                        </table>
+
+                        <nav class="ms-4" aria-label="">
+                            <ul class="pagination">
+                                <li class="page-item disabled"><a href="#" class="page-link">Previous</a></li>
+                                <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                                <li class="page-item"><a href="#" class="page-link">2</a></li>
+                                <li class="page-item"><a href="#" class="page-link">3</a></li>
+                                <li class="page-item"><a href="#" class="page-link">Next</a></li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section> -->
+
+
+
+    <!-- <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.ckeditor.com/4.17.2/standard/ckeditor.js"></script> -->
+    <script>
+        CKEDITOR.replace('editor1');
+    </script>
+
+    
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Image</th>
+        <th scope="col">Name</th>
+        <th scope="col">Address</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td><img [src]="createImgPath(user.imgPath)" alt="profile picture" style="width:60px; height:60px;"></td>
+        <td>{{user.name}}</td>
+        <td>{{user.address}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <app-upload></app-upload>
+  <div class="row">
+    <div class="offset-md-5 col-md-2">
+      <button type="button" class="btn btn-primary" (click)="onCreate()">Create </button>
+    </div>
+  </div>
+</body>
+
+
